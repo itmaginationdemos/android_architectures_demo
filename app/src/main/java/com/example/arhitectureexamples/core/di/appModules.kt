@@ -5,6 +5,7 @@ import com.example.arhitectureexamples.core.usecase.GetSomeData
 import com.example.arhitectureexamples.mvp.MVPPresenter
 import com.example.arhitectureexamples.mvp.base.Contract
 import com.example.arhitectureexamples.mvvm.MVVMViewModel
+import com.example.arhitectureexamples.mvi.MVIViewModel
 import org.koin.androidx.viewmodel.dsl.viewModelOf
 import org.koin.core.module.dsl.factoryOf
 import org.koin.core.module.dsl.singleOf
@@ -15,6 +16,7 @@ val mainModules = module {
     factoryOf(::GetSomeData)
     singleOf(::DataRepository)
     viewModelOf(::MVVMViewModel)
+    viewModelOf(::MVIViewModel)
 }
 
 val appModules = listOf(
