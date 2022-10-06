@@ -14,7 +14,7 @@
         android:theme="@style/Theme.ArhitectureExamples"
         tools:targetApi="31">
         <activity
-            android:name=".mvi.MVIActivity"
+            android:name=".compose.ComposeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
