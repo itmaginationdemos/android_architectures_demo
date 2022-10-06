@@ -3,11 +3,11 @@ package com.example.arhitectureexamples.mvvm
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.arhitectureexamples.core.usecase.GetSomeData
+import com.example.arhitectureexamples.core.usecase.GetSomeDataImpl
 import kotlinx.coroutines.launch
 
 class MVVMViewModel(
-    val getSomeData: GetSomeData
+    val getSomeData: GetSomeDataImpl
 ) : ViewModel() {
 
     val data = MutableLiveData(MVVMState())
